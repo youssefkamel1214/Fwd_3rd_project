@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        app:constraintSetStart="@id/strartmotion"
+        app:constraintSetEnd="@id/endmotion"
+        app:duration="3000"
+        app:autoTransition="animateToEnd">
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/filename"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                />
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/status"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                />
+        </KeyFrameSet>
+    </Transition>
+<ConstraintSet android:id="@+id/strartmotion">
+    <Constraint
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        android:scaleX="0.0"
+        android:scaleY="0.0"
+        app:layout_constraintStart_toEndOf="@id/filenamelabel"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+    <Constraint
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        android:scaleX="0.0"
+        android:scaleY="0.0"
+        app:layout_constraintStart_toEndOf="@id/statuslabel"
+        app:layout_constraintTop_toBottomOf="@+id/filename"
+        android:layout_marginTop="10dp" />
+
+</ConstraintSet>
+    <ConstraintSet android:id="@+id/endmotion">
+        <Constraint android:id="@+id/filename"
+            android:alpha="1.0"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/filenamelabel"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Constraint
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            app:layout_constraintStart_toEndOf="@id/statuslabel"
+            app:layout_constraintTop_toBottomOf="@+id/filename"
+            android:layout_marginTop="10dp" />
+    </ConstraintSet>
+</MotionScene>

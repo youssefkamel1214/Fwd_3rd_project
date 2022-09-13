@@ -5,10 +5,18 @@
     <string name="Detialtitle">Detail Activity</string>
     <string name="notification_title">Udacity: Android Kotlin Nanodegree </string>
     <string name="notification_description">The Project 3 repository is downloaded</string>
+    <string name="notification_channel_title">Download Status</string>
+    <string name="notification_channel_description">used to Display status of downloads failed or success </string>
     <string name="notification_button">See changes</string>
 
     <string name="button_name">Click me</string>
     <string name="button_loading">We are loading </string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="dowload_chooser">Choose file to download</string>
+    <string name="Glidetext">Glide-Image Loading Library by BumpTech</string>
+    <string name="loadingtext">LoadApp-current app repository by udicaty</string>
+    <string name="rertofittext">Rertorfit_used to get class and convert it to json</string>
+    <string name="file_name">File Name :</string>
+    <string name="status">Status :</string>
+    <string name="ok">Ok</string>
 </resources>
